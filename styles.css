@@ -1,0 +1,79 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 80vw;
+  height: 500px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.player {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 30vw;
+  border-top: 1px solid blue;
+  border-right: 1px solid blue;
+  background-color: rgb(95, 244, 255);
+}
+
+.player > div {
+  display: flex;
+  height: 10%;
+  width: 10%;
+  box-sizing: border-box;
+  border-left: 1px solid blue;
+  border-bottom: 1px solid blue;
+}
+
+.computer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 30vw;
+  border-top: 1px solid blue;
+  border-right: 1px solid blue;
+  background-color: rgb(95, 244, 255);
+}
+
+.computer > div {
+  display: flex;
+  height: 10%;
+  width: 10%;
+  box-sizing: border-box;
+  border-left: 1px solid blue;
+  border-bottom: 1px solid blue;
+}
+
+.player_choose-place {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.player_navy {
+  background-color: black;
+}
+
+.miss {
+  background-color: blue;
+}
+
+.crashed_ship {
+  background-color: rgb(200, 255, 0);
+}
+
+.destroyed {
+  background-color: rgb(255, 0, 0);
+}
+.setting {
+  margin-bottom: 20px;
+}
+.setting button {
+  height: 35px;
+  width: 100px;
+}
+.ships {
+  margin: 5px;
+}
