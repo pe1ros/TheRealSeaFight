@@ -149,6 +149,7 @@ const random_button = document.querySelector(".random");
 const handle_button = document.querySelector(".handle");
 const start_button = document.querySelector(".start");
 const choose_ships = document.querySelector(".ships");
+
 const onedeckcount = document.querySelector(".onedeck_count");
 const twodeckcount = document.querySelector(".twodeck_count");
 const threedeckcount = document.querySelector(".threedeck_count");
