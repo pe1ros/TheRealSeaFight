@@ -81,28 +81,28 @@ body {
 .ships label:nth-child(1){
   width: 30px;
   height: 30px;
-  background-color: rgb(24, 104, 252);
+  background-color:black;
   margin: 5px;
   display: flex;
 }
 .ships label:nth-child(2){
   width: 60px;
   height: 30px;
-  background-color: rgb(24, 104, 252);
+  background-color: black;
   margin: 5px;
   display: flex;
 }
 .ships label:nth-child(3){
   width: 90px;
   height: 30px;
-  background-color: rgb(24, 104, 252);
+  background-color: black;
   margin: 5px;
   display: flex;
 }
 .ships label:nth-child(4){
   width: 120px;
   height: 30px;
-  background-color:  rgb(24, 104, 252);
+  background-color:  black;
   margin: 5px;
   display: flex;
 }
