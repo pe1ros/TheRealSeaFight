@@ -81,28 +81,40 @@ body {
 .ships label:nth-child(1){
   width: 30px;
   height: 30px;
-  background-color: black;
+  background-color: rgb(24, 104, 252);
   margin: 5px;
   display: flex;
 }
 .ships label:nth-child(2){
   width: 60px;
   height: 30px;
-  background-color: black;
+  background-color: rgb(24, 104, 252);
   margin: 5px;
   display: flex;
 }
 .ships label:nth-child(3){
   width: 90px;
   height: 30px;
-  background-color: black;
+  background-color: rgb(24, 104, 252);
   margin: 5px;
   display: flex;
 }
 .ships label:nth-child(4){
   width: 120px;
   height: 30px;
-  background-color: black;
+  background-color:  rgb(24, 104, 252);
   margin: 5px;
   display: flex;
+}
+.onedeck_count{
+  margin-left: 20px;
+}
+.twodeck_count{
+  margin-left: 50px;
+}
+.threedeck_count{
+  margin-left: 80px;
+}
+.fourdeck_count{
+  margin-left: 110px;
 }

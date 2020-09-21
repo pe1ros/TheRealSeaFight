@@ -137,6 +137,11 @@ let player_navy = {
   threedeck_ship_2: { count: 3, decks: [] },
   fourdeck_ship_1: { count: 4, decks: [] },
 };
+//число кораблей для расстановки в ручную
+let onedeck_radio = 4;
+let twodeck_radio = 3;
+let threedeck_radio = 2;
+let fourdeck_radio = 1;
 
 const computer_field = document.querySelector(".computer");
 const player_field = document.querySelector(".player");
@@ -144,6 +149,15 @@ const random_button = document.querySelector(".random");
 const handle_button = document.querySelector(".handle");
 const start_button = document.querySelector(".start");
 const choose_ships = document.querySelector(".ships");
+const onedeckcount = document.querySelector(".onedeck_count");
+const twodeckcount = document.querySelector(".twodeck_count");
+const threedeckcount = document.querySelector(".threedeck_count");
+const fourdeckcount = document.querySelector(".fourdeck_count");
+
+onedeckcount.innerHTML = onedeck_radio;
+twodeckcount.innerHTML = twodeck_radio;
+threedeckcount.innerHTML = threedeck_radio;
+fourdeckcount.innerHTML = fourdeck_radio;
 
 for (let i = 0; i < 100; i++) {
   const a = document.createElement("div");
@@ -280,8 +294,9 @@ function checkPlace(target, ship, decks) {
       case 2:
         twodeck_radio = twodeck_radio - 1;
       case 1:
-        onedeck_radio = onedeck_radio - 1;
+        onedeck_radio = onedeck_radio - 1; 
     }
+
   }
 }
 
@@ -522,6 +537,7 @@ document.querySelector(".onedeck").onclick = (event) => {
 
     target.onclick = (event) => {
       addShip(target, "onedeck", onedeck_radio, 1);
+      onedeckcount.innerHTML = onedeck_radio;
     };
   };
 
@@ -552,6 +568,7 @@ document.querySelector(".twodeck").onclick = (event) => {
 
         target.onclick = (event) => {
           addShip(target, "twodeck", twodeck_radio, 2);
+          twodeckcount.innerHTML = twodeck_radio;
         };
       }
     } else {
@@ -566,6 +583,7 @@ document.querySelector(".twodeck").onclick = (event) => {
 
         target.onclick = (event) => {
           addShip(target, "twodeck", twodeck_radio, 2);
+          twodeckcount.innerHTML = twodeck_radio;
         };
       }
     }
@@ -621,6 +639,7 @@ document.querySelector(".threedeck").onclick = (event) => {
 
         target.onclick = (event) => {
           addShip(target, "threedeck", threedeck_radio, 3);
+          threedeckcount.innerHTML = threedeck_radio;
         };
       }
     } else {
@@ -638,6 +657,7 @@ document.querySelector(".threedeck").onclick = (event) => {
 
         target.onclick = (event) => {
           addShip(target, "threedeck", threedeck_radio, 3);
+          threedeckcount.innerHTML = threedeck_radio;
         };
       }
     }
@@ -704,6 +724,7 @@ document.querySelector(".fourdeck").onclick = (event) => {
 
         target.onclick = (event) => {
           addShip(target, "fourdeck", fourdeck_radio, 4);
+          fourdeckcount.innerHTML = fourdeck_radio;
         };
       }
     } else {
@@ -724,6 +745,7 @@ document.querySelector(".fourdeck").onclick = (event) => {
 
         target.onclick = (event) => {
           addShip(target, "fourdeck", fourdeck_radio, 4);
+          fourdeckcount.innerHTML = fourdeck_radio;
         };
       }
     }
@@ -1071,3 +1093,5 @@ computer_field.onmouseover = (event) => {
     location.reload();
   }
 };
+document.onload(alert("Добрый день, дорогой юзер! Что бы начать игру расставьте корабли на поле вручную или рандомно, затем нажмите кнопку старт. Победит тот, кто быстрее потопит все корабли противника."))
+
